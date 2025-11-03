@@ -10,6 +10,6 @@ Proyecto académico para demostrar la integración de **Neo4j** (base de datos d
 ## 📦 Instalación
 
 ```bash
-git clone https://github.com/tuusuario/connectu-backend.git
-cd connectu-backend
+git clone https://github.com/Edgar117532/Base-de-Datos-2-Parcial.git
+cd Connect U
 npm install
