@@ -1,0 +1,11 @@
+user:juan:cursos_visitados      → LIST     (almacena los últimos cursos)
+grupos:populares                → ZSET     (ranking por popularidad)
+profesor:carlos:recomendaciones → SET      (lista de usuarios que recomiendan)
+
+LPUSH user:juan:cursos_visitados "Bases de Datos II"
+LPUSH user:juan:cursos_visitados "Inteligencia Artificial"
+LPUSH user:juan:cursos_visitados "Programación Web"
+LRANGE user:juan:cursos_visitados 0 4
+
+ZADD grupos:populares 100 "Grupo A" 85 "Grupo B" 70 "Grupo C"
+ZREVRANGE grupos:populares 0 2 WITHSCORES
